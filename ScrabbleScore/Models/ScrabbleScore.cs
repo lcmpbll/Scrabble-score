@@ -60,7 +60,7 @@ namespace ScrabbleScore
 
     public List<string> TwoWords (string input)
     {
-      string[] oneArray = input.Split(", ", ",");
+      string[] oneArray = input.Split(", ", ",", " ");
       List<string> oneList = new List<string>(oneArray);
       return oneList;
     }
