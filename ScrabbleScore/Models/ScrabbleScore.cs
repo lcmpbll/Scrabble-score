@@ -1,4 +1,4 @@
-namespace ProjectName
+namespace ScrabbleScore
 {
   public class ClassName
   {
