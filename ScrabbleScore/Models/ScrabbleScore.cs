@@ -33,6 +33,10 @@ namespace ScrabbleScore
       {
         return 5;
       }
+      else if ("jx".Contains(listChar))
+      {
+        return 8;
+      }
       else
       {
         return 0;
