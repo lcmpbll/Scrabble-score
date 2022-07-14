@@ -25,8 +25,20 @@ namespace ScrabbleScore.Tests
       string testString = "abc";
       List<char> testList = newScrabble.StringSplit(testString);
       
-      Assert.AreEqual(1, newScrabble.LetterCheck(testList));
+      Assert.AreEqual(1, newScrabble.LetterCheck(testList[0]));
     }
+
+    [TestMethod]
+    public void LetterCheck_CheckForE_int()
+    {
+      Scrabble newScrabble = new Scrabble();
+      string testString = "bce";
+      List<char> testList = newScrabble.StringSplit(testString);
+      
+      Assert.AreEqual(1, newScrabble.LetterCheck(testList[2]));
+    }
+
+
 //     [TestMethod]
 // public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
 // {
