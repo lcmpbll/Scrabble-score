@@ -1,7 +1,15 @@
+using System;
+using System.Collections.Generic;
+
 namespace ScrabbleScore
 {
-  public class ClassName
+  public class Scrabble
   {
-    // properties, constructors, methods, etc. go here
+    public static List<char> StringSplit(string input)
+    {
+      char[] array = input.ToCharArray();
+      List<char> list = new List<char>(array);
+      return list;
+    }
   }
 }

@@ -1,11 +1,22 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName;
+using System.Collections.Generic;
+using System.Linq;
+using ScrabbleScore;
 
-namespace ProjectName.Tests
+namespace ScrabbleScore.Tests
 {
   [TestClass]
-  public class ClassNameTests
+  public class ScrabbleTests
   {
+    [TestMethod]
+    public void StringSplit_SplitStringIntoList_List()
+    {
+      string testString = "abc";
+      List<char> testList = Scrabble.StringSplit(testString);
+      List<char> expected = new List<char>(){'a','b','c'};
+
+      CollectionAssert.AreEqual(expected, testList);
+    }
 //     [TestMethod]
 // public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
 // {
