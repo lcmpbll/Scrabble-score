@@ -96,7 +96,14 @@ namespace ScrabbleScore.Tests
       }
     }
 
+    [TestMethod]
+    public void ScoreCount_AddPoints_int()
+    {
+      Scrabble newScrabble = new Scrabble();
+      string testWord = "quizzes";
+      List<char> testList = newScrabble.StringSplit(testWord);
 
-
+      Assert.AreEqual(34, newScrabble.ScoreCount(testList));
+    }
   }
 }

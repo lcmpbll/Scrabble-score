@@ -11,6 +11,7 @@ namespace ScrabbleScore
       List<char> list = new List<char>(array);
       return list;
     }
+    
     public int LetterCheck(char listChar)
     {
       if ("aeiourstln".Contains(listChar))
@@ -45,6 +46,16 @@ namespace ScrabbleScore
       {
         return 0;
       }
+    }
+
+    public int ScoreCount (List<char> word)
+    {
+      int score = 0;
+      for (int i=0; i<word.Count; i++) 
+      {
+        score += LetterCheck(word[i]);
+      }
+      return score;
     }
   }
 }
