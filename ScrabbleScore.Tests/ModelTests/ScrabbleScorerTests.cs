@@ -19,61 +19,30 @@ namespace ScrabbleScore.Tests
       CollectionAssert.AreEqual(expected, testList);
     }
     [TestMethod]
-    public void LetterCheck_CheckForA_int()
+    public void LetterCheck_CheckForOnePoint_int()
     {
       Scrabble newScrabble = new Scrabble();
-      string testString = "abc";
+      string testString = "aeiourstln";
       List<char> testList = newScrabble.StringSplit(testString);
       
-      Assert.AreEqual(1, newScrabble.LetterCheck(testList[0]));
+      for (int i=0; i<testString.Length; i++) {
+        Assert.AreEqual(1, newScrabble.LetterCheck(testList[i]));
+      }
     }
-
     [TestMethod]
-    public void LetterCheck_CheckForE_int()
+    public void LetterCheck_CheckForTwoPoints_int()
     {
       Scrabble newScrabble = new Scrabble();
-      string testString = "bce";
+      string testString = "dg";
       List<char> testList = newScrabble.StringSplit(testString);
       
-      Assert.AreEqual(1, newScrabble.LetterCheck(testList[2]));
+      for (int i=0; i<testString.Length; i++) {
+        Assert.AreEqual(2, newScrabble.LetterCheck(testList[i]));
+      }
     }
 
 
-//     [TestMethod]
-// public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
-// {
-//   // any necessary logic to prep for test; instantiating new classes, etc.
-//   Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
-  //}
-    // [TestMethod]
-    // public void ItemConstructor_CreatesInstanceOfItem_Item()
-    // {
-    //   Item newItem = new Item();
-    //   Assert.AreEqual(typeof(Item), newItem.GetType());
-    // }
 
-//     [TestMethod]
-//     public void GetDescription_ReturnsDescription_String()
-//     {
-//       string description = "Walk the dog.";
-//       Item newItem = new Item(description);
-//       string result = newItem.Description;
-//       Assert.AreEqual(description, result);
-//     }
-
-//     [TestMethod]
-// public void GetDescription_ReturnsDescription_String()
-// {
-//   //Arrange
-//   string description = "Walk the dog.";
-//   Item newItem = new Item(description);
-
-//   //Act
-//   string result = newItem.Description;
-
-//   //Assert
-//   Assert.AreEqual(description, result);
-// }
 
   }
 }

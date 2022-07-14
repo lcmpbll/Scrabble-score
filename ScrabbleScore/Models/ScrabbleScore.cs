@@ -17,11 +17,14 @@ namespace ScrabbleScore
       {
         return 1;
       }
-      else 
+      else if ("dg".Contains(listChar))
+      {
+        return 2;
+      } 
+      else
       {
         return 0;
       }
     }
   }
-
 }
