@@ -11,11 +11,21 @@ namespace ScrabbleScore.Tests
     [TestMethod]
     public void StringSplit_SplitStringIntoList_List()
     {
+      Scrabble newScrabble = new Scrabble();
       string testString = "abc";
-      List<char> testList = Scrabble.StringSplit(testString);
+      List<char> testList = newScrabble.StringSplit(testString);
       List<char> expected = new List<char>(){'a','b','c'};
 
       CollectionAssert.AreEqual(expected, testList);
+    }
+    [TestMethod]
+    public void LetterCheck_CheckForA_True()
+    {
+      Scrabble newScrabble = new Scrabble();
+      string testString = "abc";
+      List<char> testList = newScrabble.StringSplit(testString);
+      
+      Assert.AreEqual(true, newScrabble.LetterCheck(testList));
     }
 //     [TestMethod]
 // public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
