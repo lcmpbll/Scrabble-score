@@ -21,6 +21,10 @@ namespace ScrabbleScore
       {
         return 2;
       } 
+      else if ("bcmp".Contains(listChar))
+      {
+        return 3;
+      }
       else
       {
         return 0;

@@ -40,6 +40,17 @@ namespace ScrabbleScore.Tests
         Assert.AreEqual(2, newScrabble.LetterCheck(testList[i]));
       }
     }
+    [TestMethod]
+    public void LetterCheck_CheckForThreePoints_int()
+    {
+      Scrabble newScrabble = new Scrabble();
+      string testString = "bcmp";
+      List<char> testList = newScrabble.StringSplit(testString);
+      
+      for (int i=0; i<testString.Length; i++) {
+        Assert.AreEqual(3, newScrabble.LetterCheck(testList[i]));
+      }
+    }
 
 
 
