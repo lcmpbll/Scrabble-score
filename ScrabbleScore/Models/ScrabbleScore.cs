@@ -25,9 +25,13 @@ namespace ScrabbleScore
       {
         return 3;
       }
-            else if ("fhvwy".Contains(listChar))
+      else if ("fhvwy".Contains(listChar))
       {
         return 4;
+      }
+      else if ("k".Contains(listChar))
+      {
+        return 5;
       }
       else
       {
