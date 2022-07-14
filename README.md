@@ -1,6 +1,8 @@
 # _Project Name_
 
 #### By _Liam Campbell_
+#### By _Anthony DiFalco_
+#### By _Derrak Richard_
 
 
 
