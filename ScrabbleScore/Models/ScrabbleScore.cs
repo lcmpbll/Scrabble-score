@@ -37,6 +37,10 @@ namespace ScrabbleScore
       {
         return 8;
       }
+      else if ("qz".Contains(listChar))
+      {
+        return 10;
+      }
       else
       {
         return 0;

@@ -84,7 +84,17 @@ namespace ScrabbleScore.Tests
         Assert.AreEqual(8, newScrabble.LetterCheck(testList[i]));
       }
     }
-
+    [TestMethod]
+    public void LetterCheck_CheckForTenPoints_int()
+    {
+      Scrabble newScrabble = new Scrabble();
+      string testString = "qz";
+      List<char> testList = newScrabble.StringSplit(testString);
+      
+      for (int i=0; i<testString.Length; i++) {
+        Assert.AreEqual(10, newScrabble.LetterCheck(testList[i]));
+      }
+    }
 
 
 
