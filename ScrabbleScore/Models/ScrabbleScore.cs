@@ -12,7 +12,7 @@ namespace ScrabbleScore
       return list;
     }
     
-    public int LetterCheck(char listChar)
+    private int LetterCheck(char listChar)
     {
       if ("aeiourstln".Contains(listChar))
       {
@@ -59,10 +59,11 @@ namespace ScrabbleScore
     }
 
     public List<string> TwoWords (string input)
-    {
-      string[] oneArray = input.Split(", ", ",", " ");
+    { 
+      string[] oneArray = input.Split(',');
       List<string> oneList = new List<string>(oneArray);
       return oneList;
     }
-  }
+  }       
+   
 }
