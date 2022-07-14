@@ -106,5 +106,14 @@ namespace ScrabbleScore.Tests
 
       Assert.AreEqual(34, newScrabble.ScoreCount(testList));
     }
+    [TestMethod]
+    public void TwoWords_SplitWords_List()
+    {
+      Scrabble newScrabble = new Scrabble();
+      string testWords = "hello, goodbye";
+      List<string> testList = new List<string> {"hello", "goodbye"};
+
+      CollectionAssert.AreEqual(testList, newScrabble.TwoWords(testWords)); 
+    }
   }
 }
