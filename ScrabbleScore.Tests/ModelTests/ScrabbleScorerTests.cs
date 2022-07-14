@@ -51,6 +51,28 @@ namespace ScrabbleScore.Tests
         Assert.AreEqual(3, newScrabble.LetterCheck(testList[i]));
       }
     }
+        [TestMethod]
+    public void LetterCheck_CheckForFourPoints_int()
+    {
+      Scrabble newScrabble = new Scrabble();
+      string testString = "fhvwy";
+      List<char> testList = newScrabble.StringSplit(testString);
+      
+      for (int i=0; i<testString.Length; i++) {
+        Assert.AreEqual(4, newScrabble.LetterCheck(testList[i]));
+      }
+    }
+    [TestMethod]
+    public void LetterCheck_CheckForFourPoints_int()
+    {
+      Scrabble newScrabble = new Scrabble();
+      string testString = "fhvwy";
+      List<char> testList = newScrabble.StringSplit(testString);
+      
+      for (int i=0; i<testString.Length; i++) {
+        Assert.AreEqual(4, newScrabble.LetterCheck(testList[i]));
+      }
+    }
 
 
 
