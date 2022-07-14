@@ -18,11 +18,12 @@ namespace ScrabbleScore.Tests
 
       CollectionAssert.AreEqual(expected, testList);
     }
+
     [TestMethod]
     public void LetterCheck_CheckForOnePoint_int()
     {
       Scrabble newScrabble = new Scrabble();
-      string testString = "aeiourstln";
+      string testString = "aEiourstln";
       List<char> testList = newScrabble.StringSplit(testString);
       
       for (int i=0; i<testString.Length; i++) {
@@ -100,7 +101,7 @@ namespace ScrabbleScore.Tests
     public void ScoreCount_AddPoints_int()
     {
       Scrabble newScrabble = new Scrabble();
-      string testWord = "quizzes";
+      string testWord = "Quizzes";
       List<char> testList = newScrabble.StringSplit(testWord);
 
       Assert.AreEqual(34, newScrabble.ScoreCount(testList));

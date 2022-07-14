@@ -7,7 +7,7 @@ namespace ScrabbleScore
   {
     public List<char> StringSplit(string input)
     {
-      char[] array = input.ToCharArray();
+      char[] array = input.ToLower().ToCharArray();
       List<char> list = new List<char>(array);
       return list;
     }
