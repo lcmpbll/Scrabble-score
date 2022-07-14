@@ -1,4 +1,4 @@
-# _Project Name_
+# _Scrabble Score_
 
 #### By _Liam Campbell_
 #### By _Anthony DiFalco_
@@ -6,7 +6,7 @@
 
 
 
-#### _Description_
+#### _A user inputs a word and this program returns the scrabble score of the word_
 
 
 
@@ -21,13 +21,13 @@
 
 ## Description
 
-_   _
+_This is a C sharp based program that uses the console to intake a word from the user, the program will then return the word score of the word in the game scrabble._
 
 ## Setup/Installation Requirements
 
-* _Clone the git repository github.com/lcmpbll/ to your desktop_
+* _Clone the git repository github.com/lcmpbll/Scrabble-score to your desktop_
 * _Open file in vs code_
-* _Run command dotnet restore from the ProjectName.Test folder_
+* _Run command dotnet restore from the ScrabbleScore folder_
 * _Run command dotent run in the top level of the project._
 
 
@@ -41,4 +41,4 @@ _   _
 
 _Feel free to reach out via [Github](github.com.lcmpbll) to provide feedback on this project or to view my other projects._
 
-[Copyright](LICENSE) (c) _06-22-2022_ _Liam Campbell_
+[Copyright](LICENSE) (c) _07-14-2022_ _Liam Campbell, Anthony DiFalco, Derrak Richards_
