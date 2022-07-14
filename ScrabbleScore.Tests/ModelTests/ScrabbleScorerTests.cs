@@ -19,13 +19,13 @@ namespace ScrabbleScore.Tests
       CollectionAssert.AreEqual(expected, testList);
     }
     [TestMethod]
-    public void LetterCheck_CheckForA_True()
+    public void LetterCheck_CheckForA_int()
     {
       Scrabble newScrabble = new Scrabble();
       string testString = "abc";
       List<char> testList = newScrabble.StringSplit(testString);
       
-      Assert.AreEqual(true, newScrabble.LetterCheck(testList));
+      Assert.AreEqual(1, newScrabble.LetterCheck(testList));
     }
 //     [TestMethod]
 // public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()

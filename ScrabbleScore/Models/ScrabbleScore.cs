@@ -11,9 +11,16 @@ namespace ScrabbleScore
       List<char> list = new List<char>(array);
       return list;
     }
-    public bool LetterCheck(List<char> list)
+    public int LetterCheck(List<char> list)
     {
-      return list.Contains('a');
+      if (list.Contains('a'))
+      {
+        return 1;
+      }
+      else 
+      {
+        return 0;
+      }
     }
   }
 
